@@ -9,6 +9,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 nav {
@@ -21,7 +28,7 @@ nav {
 button {
     font-weight: 600;
     border: none;
-    background-color: cadetblue;
+    background-color: #5f9ea0;
     color: white;
     border-radius: 0.25rem;
     padding: 0.5rem 2rem;
@@ -38,4 +45,10 @@ button:active {
     padding: 1.5rem;
     border-radius: 0.5rem;
     border: 2px solid cadetblue;
+    background-color: rgba(240, 248, 255, 0.75);
+}
+
+.img-reference {
+    max-width: 20rem;
+    margin-inline: 9rem;
 }
