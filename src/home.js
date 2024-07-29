@@ -17,11 +17,9 @@ export function homePage() {
 
     const presentation = createElement('section', ['section']);
     const hours = createElement('section', ['section', 'hours']);
-    const location = createElement('section', ['section']);
     const description = createElement('p', [], "Welcome to my restaurant, where we blend innovation and tradition to deliver a dining experience that's as unforgettable as it is delicious. Our menu features locally-sourced ingredients and globally-inspired flavors, crafted with passion by our talented chefs to delight every palate.");
     const hoursDescription = createElement('p', [], 'Restaurant Mafs');
     const titleHours = createElement('p', [], 'Hours of Operation:');
-    const locationAddr = createElement('p', [], '123 Main Street, Springfield, IL 62704, USA');
     const list = createElement('ul', []);
     const list1 = createElement('li', [], 'Monday to Thursday: 8:00 AM - 4:00 PM');
     const list2 = createElement('li', [], 'Friday and Saturday: 8:00 AM - 2:00 PM');
@@ -36,12 +34,10 @@ export function homePage() {
     hours.appendChild(titleHours);
     hours.appendChild(list);
     hours.appendChild(myImage)
-    location.appendChild(locationAddr);
     
 
     fragment.appendChild(presentation);
     fragment.appendChild(hours);
-    fragment.appendChild(location)
 
     content.appendChild(fragment);
 
