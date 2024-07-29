@@ -1,7 +1,6 @@
-import './style.css';
 import egg from './egg.png';
 
-function createElement(tag, classNames = [], textContent = '') {
+export function createElement(tag, classNames = [], textContent = '') {
     const element = document.createElement(tag);
     if (classNames.length > 0) {
         element.classList.add(...classNames);
