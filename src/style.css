@@ -2,12 +2,13 @@
 
 :root {
     font-family: "Merriweather Sans", sans-serif;
+    font-size: 16px;
 }
 
 body {
     margin-block: 0;
     margin-inline: 6rem;
-    max-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +16,7 @@ body {
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
       ),url(./bg.jpg);
-    background-repeat: no-repeat;
+    background-repeat: initial;
     background-size: cover;
     
 }
@@ -42,30 +43,37 @@ button:active {
 }
 
 .section {
-    max-width: 40rem;
+    width: clamp(20rem, 25rem, 50rem);
     margin-block: 2rem;
     padding: 1.5rem;
     border-radius: 0.5rem;
     border: 2px solid cadetblue;
     background-color: rgba(240, 248, 255, 0.75);
+    font-size: 0.9rem;
 }
 
 .article .img {
-    max-width: 10rem;
+    max-width: 8rem;
     margin-left: auto;
 }
 
 .section.menu {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    
 }
 
 .article {
     display: flex;
 }
 
+.section.hours{
+    display: flex;
+    flex-direction: column;
+}
 .img-reference {
-    max-width: 20rem;
-    margin-inline: 9rem;
+    max-width: 18rem;
+    align-self: center;
+
 }
